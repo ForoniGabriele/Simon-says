@@ -1,0 +1,48 @@
+.board {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.item {
+    --dim: 20vh ;
+    width: var(--dim);
+    height: var(--dim);
+    cursor: pointer;
+}
+
+.board > div {
+    border: solid black 5px;
+}
+
+#verde {
+    background-color: green;
+    border-right-width: 2.5px;
+    border-bottom-width: 2.5px;
+    border-top-left-radius: 100%;
+}
+
+#rosso {
+    background-color: red;
+    border-left-width: 2.5px;
+    border-bottom-width: 2.5px;
+	border-top-right-radius: 100%;
+}
+
+#giallo {
+    background-color: yellow;
+    border-right-width: 2.5px;
+    border-top-width: 2.5px;
+	border-bottom-left-radius: 100%;
+}
+
+#blu {
+    background-color: dodgerblue;
+    border-left-width: 2.5px;
+    border-top-width: 2.5px;
+	border-bottom-right-radius: 100%;
+}
+
+.item:active {
+    filter: brightness(0.7);
+}
